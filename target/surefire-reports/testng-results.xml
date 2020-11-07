@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21321" started-at="2020-11-07T10:31:08Z" finished-at="2020-11-07T10:31:30Z">
+    <groups>
+      <group name="regression">
+        <method signature="AddToCartTest.addTwoItemAndCheckout()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="addTwoItemAndCheckout" class="com.framework.testcase.AddToCartTest"/>
+        <method signature="LoginTest.checkErrorMessage()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="checkErrorMessage" class="com.framework.testcase.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="AddToCartTest.addToCartTest()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="addToCartTest" class="com.framework.testcase.AddToCartTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="validLoginTest" class="com.framework.testcase.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Test" duration-ms="21321" started-at="2020-11-07T10:31:08Z" finished-at="2020-11-07T10:31:30Z">
+      <class name="com.framework.testcase.LoginTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="beforeSuite" is-config="true" duration-ms="199" started-at="2020-11-07T10:31:08Z" finished-at="2020-11-07T10:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="beforeMethod" is-config="true" duration-ms="9312" started-at="2020-11-07T10:31:08Z" finished-at="2020-11-07T10:31:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkErrorMessage()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="checkErrorMessage" duration-ms="562" started-at="2020-11-07T10:31:18Z" finished-at="2020-11-07T10:31:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkErrorMessage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="afterMethod" is-config="true" duration-ms="57" started-at="2020-11-07T10:31:18Z" finished-at="2020-11-07T10:31:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="beforeMethod" is-config="true" duration-ms="2057" started-at="2020-11-07T10:31:18Z" finished-at="2020-11-07T10:31:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="validLoginTest" duration-ms="1077" started-at="2020-11-07T10:31:20Z" finished-at="2020-11-07T10:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="afterMethod" is-config="true" duration-ms="54" started-at="2020-11-07T10:31:21Z" finished-at="2020-11-07T10:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.framework.testcase.LoginTest@5b275dab]" name="afterSuite" is-config="true" duration-ms="279" started-at="2020-11-07T10:31:30Z" finished-at="2020-11-07T10:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.framework.testcase.LoginTest -->
+      <class name="com.framework.testcase.AddToCartTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="beforeMethod" is-config="true" duration-ms="1488" started-at="2020-11-07T10:31:21Z" finished-at="2020-11-07T10:31:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addToCartTest()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="addToCartTest" duration-ms="2244" started-at="2020-11-07T10:31:23Z" finished-at="2020-11-07T10:31:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="afterMethod" is-config="true" duration-ms="52" started-at="2020-11-07T10:31:25Z" finished-at="2020-11-07T10:31:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="beforeMethod" is-config="true" duration-ms="1506" started-at="2020-11-07T10:31:25Z" finished-at="2020-11-07T10:31:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addTwoItemAndCheckout()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="addTwoItemAndCheckout" duration-ms="2844" started-at="2020-11-07T10:31:27Z" finished-at="2020-11-07T10:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTwoItemAndCheckout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.framework.testcase.AddToCartTest@61832929]" name="afterMethod" is-config="true" duration-ms="53" started-at="2020-11-07T10:31:30Z" finished-at="2020-11-07T10:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.framework.testcase.AddToCartTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
