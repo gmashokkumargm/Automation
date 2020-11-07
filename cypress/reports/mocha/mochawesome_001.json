@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-07T11:35:42.193Z",
+    "end": "2020-11-07T11:35:46.380Z",
+    "duration": 4187,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "88be5630-9967-4767-80bc-f71d2496d6db",
+      "title": "",
+      "fullFile": "cypress/integration/Login/LoginSpec.js",
+      "file": "cypress/integration/Login/LoginSpec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+          "title": "Login test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login valid credentials and verify sucessful login",
+              "fullTitle": "Login test cases Login valid credentials and verify sucessful login",
+              "timedOut": null,
+              "duration": 2469,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(this.data.validEmail, this.data.validPassword);\nhomePage.verifyURL('inventory');\ncommonPage.clickMoreMenu();\ncommonPage.clickLogout();",
+              "err": {},
+              "uuid": "939b2de1-4edc-4504-912d-0eafc07f82b9",
+              "parentUUID": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with invalid credentials and verify error message",
+              "fullTitle": "Login test cases login with invalid credentials and verify error message",
+              "timedOut": null,
+              "duration": 657,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(this.data.invalidEmail, this.data.invalidPassword);\nloginPage.verifyErrorMessage();",
+              "err": {},
+              "uuid": "d2510292-6836-4bf1-b98a-2fefa3d91091",
+              "parentUUID": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with empty values and verify error message",
+              "fullTitle": "Login test cases login with empty values and verify error message",
+              "timedOut": null,
+              "duration": 201,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.clickLoginButton();\nloginPage.verifyEmptyLogin();",
+              "err": {},
+              "uuid": "8ec74f66-b23a-4383-bfde-81d56eb65520",
+              "parentUUID": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "939b2de1-4edc-4504-912d-0eafc07f82b9",
+            "d2510292-6836-4bf1-b98a-2fefa3d91091",
+            "8ec74f66-b23a-4383-bfde-81d56eb65520"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3327,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
