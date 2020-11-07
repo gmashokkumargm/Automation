@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="13.522747">
+<testcase classname="Login features" name="Login with valid credentials" time="11.386583">
+<system-out><![CDATA[Given login credentials standard_user and secret_sauce......................passed
+When Click on login button..................................................passed
+Then Verify home page.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login features" name="Verify error message showing properly for invalid credentials" time="2.136164">
+<system-out><![CDATA[Given login credentials check and check.....................................passed
+When Click on login button..................................................passed
+Then Verify error message...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

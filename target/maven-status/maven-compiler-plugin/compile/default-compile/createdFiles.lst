@@ -1,0 +1,3 @@
+com/framework/pages/LoginPage.class
+com/framework/pages/HomePage.class
+com/framework/seleniumBase/SeleniumBase.class
