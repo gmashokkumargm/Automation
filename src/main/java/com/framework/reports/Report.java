@@ -8,6 +8,7 @@ package com.framework.reports;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -16,6 +17,10 @@ public class Report {
 
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	
+	//SeleniumBase base = new SeleniumBase();
+	//TakeSnap snap = new TakeSnap();
+	
 	
 	public ExtentReports beginResult(){
 		String timeStamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
@@ -29,15 +34,18 @@ public class Report {
 		test = extent.createTest(testCaseName,testCaseDesc);
 	}
 	
-	public void stepReport(String status,String desc){
-		if(status.equalsIgnoreCase("Pass")) {
-			test.pass(desc);			
-		} else if(status.equalsIgnoreCase("Fail")) {
-			test.fail(desc);	
-		} else if(status.equalsIgnoreCase("Warning")) {
-			test.warning(desc);			
-		}		
-	}
+	
+//	public void stepReport(String status,String desc){
+//		
+//
+//		if(status.equalsIgnoreCase("Pass")) {
+//			test.pass(desc);			
+//		} else if(status.equalsIgnoreCase("Fail")) {
+//			test.fail(desc);	
+//		} else if(status.equalsIgnoreCase("Warning")) {
+//			test.warning(desc);			
+//		}		
+//	}
 	
 	
 	public void endResult(){

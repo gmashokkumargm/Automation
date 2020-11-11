@@ -20,7 +20,7 @@ public class LoginTest extends Annotation{
 	public void validLoginTest(){
 		rep.startTestCase("Login_001", "check whether we can able to login with valid credentials or not");
 		new LoginPage().loginWithValidCredentials(Data.validUserName, Data.validPassword)
-		.verifyLoginSuccess();	
+		.verifyLoginSuccess();
 	}
 	
 	@Test(groups="regression")

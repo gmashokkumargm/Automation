@@ -12,6 +12,7 @@ import com.framework.pages.LoginPage;
 import com.framework.reports.Report;
 import com.framework.utils.Data;
 
+
 public class AddToCartTest extends Annotation{
 	Report rep = new Report();
 	

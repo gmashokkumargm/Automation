@@ -9,11 +9,12 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.framework.listener.TestngListener;
 import com.framework.reports.Report;
 import com.framework.seleniumBase.SeleniumBase;
 import com.framework.utils.Data;
 
-public class Annotation {	
+public class Annotation extends TestngListener{	
 	
 	Report rep = new Report();
 	SeleniumBase base= new SeleniumBase();

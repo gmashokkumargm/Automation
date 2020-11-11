@@ -8,16 +8,22 @@
 
 package com.framework.seleniumBase;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.framework.reports.Report;
 
 public class SeleniumBase extends Report {
@@ -25,8 +31,8 @@ public class SeleniumBase extends Report {
 	public static WebDriver driver;
 	
 	public void startApp(String url){
-		//String browser = System.getProperty("browser"); //Getting input from maven command
-		String browser="chrome";
+		String browser = System.getProperty("browser"); //Getting input from maven command
+		//String browser="chrome";
 		try{
 			if(browser.equalsIgnoreCase("chrome")){
 				System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver");
@@ -46,12 +52,12 @@ public class SeleniumBase extends Report {
 
 	public void click(WebElement ele, String eleName) {
 		try{
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			ele.click();
 			stepReport("pass","The Element "+eleName+" clicked sucessfully");
 		}catch(Exception e){
-			stepReport("fail", "The Element "+eleName+" failed to click "+ e.getMessage());
+			stepReport("fail", "The Element "+eleName+" failed to click : Error - "+ e.getMessage());
 		}
 		
 	}
@@ -131,6 +137,32 @@ public class SeleniumBase extends Report {
 			stepReport("fail","Exception occured while getting partial text");
 		}
 		return partialText;
+	}
+	public void stepReport(String status,String desc){
+		
+		if(status.equalsIgnoreCase("pass")) {
+			test.pass(desc);
+		} else if(status.equalsIgnoreCase("fail")) {
+			test.fail(desc,MediaEntityBuilder.createScreenCaptureFromBase64String
+					("./reports/images/"+takeSnap()+".png").build());
+			Assert.fail();
+		} else if(status.equalsIgnoreCase("Warning")) {
+			test.warning(desc,MediaEntityBuilder.createScreenCaptureFromBase64String
+					("./reports/images/"+takeSnap()+".png").build());			
+		}	
+	}
+	
+	public long takeSnap() {
+
+		long number = (long) Math.floor(Math.random() * 900000000L) + 10000000L;
+		try {
+			FileUtils.copyFile(((TakesScreenshot) SeleniumBase.driver).getScreenshotAs(OutputType.FILE) , new File("./reports/images/"+number+".png"));
+		} catch (WebDriverException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return number;
 	}
 	
 	public void closeBrowser() {
