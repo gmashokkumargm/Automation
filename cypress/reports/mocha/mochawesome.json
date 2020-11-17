@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-07T11:35:24.698Z",
-    "end": "2020-11-07T11:35:34.821Z",
-    "duration": 10123,
+    "start": "2020-11-11T05:28:46.022Z",
+    "end": "2020-11-11T05:28:57.107Z",
+    "duration": 11085,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e7b050fc-aae1-4dc2-9bda-ef68e8fc72a0",
+      "uuid": "c98da36b-4e95-4808-ab24-1b695a41c744",
       "title": "",
       "fullFile": "cypress/integration/AddCartFolder/AddToCardSpec.js",
       "file": "cypress/integration/AddCartFolder/AddToCardSpec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bf54dae5-14bb-45e8-a818-8ccbf5027fae",
+          "uuid": "517abb6d-657d-4ae8-9107-6a008ebcc500",
           "title": "Add to card and checkout the product",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Add one product to cart, checkout and verify thankyou page",
               "fullTitle": "Add to card and checkout the product Add one product to cart, checkout and verify thankyou page",
               "timedOut": null,
-              "duration": 4799,
+              "duration": 5249,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "var productName = 'Test.allTheThings() T-Shirt (Red)';\nloginPage.login(this.data.validEmail, this.data.validPassword);\nhomePage.clickAddToCart(productName);\ncommonPage.clickCartIcon();\ncartPage.verifyProduct(productName);\ncartPage.verifyNumberOfProducts(1);\ncartPage.clickCheckOutButton();\ncheckoutPage.enterInformation(this.checkoutPageData.firstName, this.checkoutPageData.lastName, this.checkoutPageData.zip);\ncheckoutPage.clickContinueButton();\ncheckoutOverviewPage.verifySubTotal();\ncheckoutOverviewPage.verifyTotal();\ncheckoutOverviewPage.clickFinishButton();\ncheckoutCompletepage.verifyThankyou();",
               "err": {},
-              "uuid": "389da415-a1b2-40dd-b450-2ac42f5bd7c4",
-              "parentUUID": "bf54dae5-14bb-45e8-a818-8ccbf5027fae",
+              "uuid": "0494f1cd-8e96-4f74-bcac-f8578104c0de",
+              "parentUUID": "517abb6d-657d-4ae8-9107-6a008ebcc500",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Add two products to cart, checkout and verify thankyou page",
               "fullTitle": "Add to card and checkout the product Add two products to cart, checkout and verify thankyou page",
               "timedOut": null,
-              "duration": 2020,
+              "duration": 2174,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "var products2 = ['Test.allTheThings() T-Shirt (Red)', 'Sauce Labs Bike Light'];\nloginPage.login(this.data.validEmail, this.data.validPassword);\nproducts2.forEach(function (ele) {\n  homePage.clickAddToCart(ele); //instead of calling multiple time using foreach loop\n});\ncommonPage.clickCartIcon();\nproducts2.forEach(function (ele) {\n  cartPage.verifyProduct(ele);\n});\ncartPage.verifyNumberOfProducts(products2.length);\ncartPage.clickCheckOutButton();\ncheckoutPage.enterInformation(this.checkoutPageData.firstName, this.checkoutPageData.lastName, this.checkoutPageData.zip);\ncheckoutPage.clickContinueButton();\ncheckoutOverviewPage.verifySubTotal();\ncheckoutOverviewPage.verifyTotal();\ncheckoutOverviewPage.clickFinishButton();\ncheckoutCompletepage.verifyThankyou();",
               "err": {},
-              "uuid": "e90b51c4-4cab-44e7-89b3-17f7ec92328b",
-              "parentUUID": "bf54dae5-14bb-45e8-a818-8ccbf5027fae",
+              "uuid": "997b6c8c-ecc2-4835-b762-6f87c0935a4d",
+              "parentUUID": "517abb6d-657d-4ae8-9107-6a008ebcc500",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Add three products to cart, verify, checkout and verify thankyou page",
               "fullTitle": "Add to card and checkout the product Add three products to cart, verify, checkout and verify thankyou page",
               "timedOut": null,
-              "duration": 2102,
+              "duration": 2259,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "var products3 = ['Test.allTheThings() T-Shirt (Red)', 'Sauce Labs Onesie', 'Sauce Labs Bike Light'];\nloginPage.login(this.data.validEmail, this.data.validPassword);\nproducts3.forEach(function (ele) {\n  homePage.clickAddToCart(ele);\n});\ncommonPage.clickCartIcon();\nproducts3.forEach(function (ele) {\n  cartPage.verifyProduct(ele);\n});\ncartPage.verifyNumberOfProducts(products3.length);\ncartPage.clickCheckOutButton();\ncheckoutPage.enterInformation(this.checkoutPageData.firstName, this.checkoutPageData.lastName, this.checkoutPageData.zip);\ncheckoutPage.clickContinueButton();\ncheckoutOverviewPage.verifySubTotal();\ncheckoutOverviewPage.verifyTotal();\ncheckoutOverviewPage.clickFinishButton();\ncheckoutCompletepage.verifyThankyou();",
               "err": {},
-              "uuid": "626294d9-9f16-41fc-a946-c3d1c5c44e0a",
-              "parentUUID": "bf54dae5-14bb-45e8-a818-8ccbf5027fae",
+              "uuid": "54f5958e-0605-4de0-a255-62c267d7ada3",
+              "parentUUID": "517abb6d-657d-4ae8-9107-6a008ebcc500",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "389da415-a1b2-40dd-b450-2ac42f5bd7c4",
-            "e90b51c4-4cab-44e7-89b3-17f7ec92328b",
-            "626294d9-9f16-41fc-a946-c3d1c5c44e0a"
+            "0494f1cd-8e96-4f74-bcac-f8578104c0de",
+            "997b6c8c-ecc2-4835-b762-6f87c0935a4d",
+            "54f5958e-0605-4de0-a255-62c267d7ada3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8921,
+          "duration": 9682,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

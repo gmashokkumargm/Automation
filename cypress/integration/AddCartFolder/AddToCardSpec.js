@@ -20,12 +20,8 @@ describe('Add to card and checkout the product', function(){
     //Importing url from cypress.json and data from fixtures folder
     beforeEach(function(){
         cy.visit(Cypress.env('url'))
-        cy.fixture('data').then(function(data){
-            this.data=data
-        })
-        cy.fixture('checkoutPageData').then(function(checkoutPageData){
-            this.checkoutPageData=checkoutPageData
-        })
+        cy.fixture('data').as('data')
+        cy.fixture('checkoutPageData').as('checkoutPageData')
     })
 
     it('Add one product to cart, checkout and verify thankyou page', function(){

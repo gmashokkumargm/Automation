@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-07T11:35:42.193Z",
-    "end": "2020-11-07T11:35:46.380Z",
-    "duration": 4187,
+    "start": "2020-11-11T05:29:00.642Z",
+    "end": "2020-11-11T05:29:05.299Z",
+    "duration": 4657,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "88be5630-9967-4767-80bc-f71d2496d6db",
+      "uuid": "08cf5270-36ce-4288-91b1-e232b28b1f98",
       "title": "",
       "fullFile": "cypress/integration/Login/LoginSpec.js",
       "file": "cypress/integration/Login/LoginSpec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+          "uuid": "64af3430-9244-48e8-8b05-e8995f18947a",
           "title": "Login test cases",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login valid credentials and verify sucessful login",
               "fullTitle": "Login test cases Login valid credentials and verify sucessful login",
               "timedOut": null,
-              "duration": 2469,
+              "duration": 2901,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "loginPage.login(this.data.validEmail, this.data.validPassword);\nhomePage.verifyURL('inventory');\ncommonPage.clickMoreMenu();\ncommonPage.clickLogout();",
               "err": {},
-              "uuid": "939b2de1-4edc-4504-912d-0eafc07f82b9",
-              "parentUUID": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+              "uuid": "493b36d7-94fb-4237-97a5-1e36035d1f4b",
+              "parentUUID": "64af3430-9244-48e8-8b05-e8995f18947a",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "login with invalid credentials and verify error message",
               "fullTitle": "Login test cases login with invalid credentials and verify error message",
               "timedOut": null,
-              "duration": 657,
+              "duration": 697,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "loginPage.login(this.data.invalidEmail, this.data.invalidPassword);\nloginPage.verifyErrorMessage();",
               "err": {},
-              "uuid": "d2510292-6836-4bf1-b98a-2fefa3d91091",
-              "parentUUID": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+              "uuid": "d7b14c94-348c-4d40-b4ad-e1c588039aa2",
+              "parentUUID": "64af3430-9244-48e8-8b05-e8995f18947a",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "login with empty values and verify error message",
               "fullTitle": "Login test cases login with empty values and verify error message",
               "timedOut": null,
-              "duration": 201,
+              "duration": 219,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "loginPage.clickLoginButton();\nloginPage.verifyEmptyLogin();",
               "err": {},
-              "uuid": "8ec74f66-b23a-4383-bfde-81d56eb65520",
-              "parentUUID": "da764cdf-c3b2-445b-b65f-a83829b2bb8a",
+              "uuid": "87343740-9194-4845-9107-f3ec6385736b",
+              "parentUUID": "64af3430-9244-48e8-8b05-e8995f18947a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "939b2de1-4edc-4504-912d-0eafc07f82b9",
-            "d2510292-6836-4bf1-b98a-2fefa3d91091",
-            "8ec74f66-b23a-4383-bfde-81d56eb65520"
+            "493b36d7-94fb-4237-97a5-1e36035d1f4b",
+            "d7b14c94-348c-4d40-b4ad-e1c588039aa2",
+            "87343740-9194-4845-9107-f3ec6385736b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3327,
+          "duration": 3817,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

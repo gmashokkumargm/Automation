@@ -12,9 +12,7 @@ describe('Login test cases', function(){
     //Importing url from cypress.json and data from fixtures folder
     beforeEach(function(){
         cy.visit(Cypress.env('url'))
-        cy.fixture('data').then(function(data){
-            this.data=data
-        })
+        cy.fixture('data').as('data')
     })
 
     it('Login valid credentials and verify sucessful login', function(){
