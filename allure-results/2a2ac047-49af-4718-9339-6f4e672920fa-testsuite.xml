@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605607850139' stop='1605607858945'>
+    <name>Add to cart and checkout the product</name>
+    <title>Add to cart and checkout the product</title>
+    <test-cases>
+        <test-case start='1605607850139' status='passed' stop='1605607855389'>
+            <name>Add one product to cart, checkout and verify thankyou page</name>
+            <title>Add one product to cart, checkout and verify thankyou page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605607855390' status='passed' stop='1605607856972'>
+            <name>Add two products to cart, checkout and verify thankyou page</name>
+            <title>Add two products to cart, checkout and verify thankyou page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605607856973' status='passed' stop='1605607858944'>
+            <name>Add three products to cart, checkout and verify thankyou page</name>
+            <title>Add three products to cart, checkout and verify thankyou page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
